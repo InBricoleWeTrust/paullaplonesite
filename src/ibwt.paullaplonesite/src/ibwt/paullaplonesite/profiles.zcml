@@ -42,7 +42,7 @@
     <depends name="plone-content"/>
   </genericsetup:importStep>
   <!-- -->
-  <utility factory="ibwt_paullaplonesite.HiddenProducts" name="ibwt_paullaplonesite.hiddenproducts"/>
-  <utility factory="ibwt_paullaplonesite.HiddenProfiles" name="ibwt_paullaplonesite.hiddenprofiles"/>
+  <utility factory="ibwt.paullaplonesite.HiddenProducts" name="ibwt_paullaplonesite.hiddenproducts"/>
+  <utility factory="ibwt.paullaplonesite.HiddenProfiles" name="ibwt_paullaplonesite.hiddenprofiles"/>
   <include package=".upgrades"/>
 </configure>

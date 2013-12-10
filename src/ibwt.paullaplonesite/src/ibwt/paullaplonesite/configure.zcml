@@ -76,6 +76,6 @@
        name="ibwt_paullaplonesite_custom"/>
   
   <include package="plone.resource" file="meta.zcml"/>
-  <plone:static directory="static" type="theme" name="paullab_theme" />
+  <plone:static directory="static" type="theme" name="paullabtheme" />
 </configure>
 <!-- vim:set ft=xml: -->

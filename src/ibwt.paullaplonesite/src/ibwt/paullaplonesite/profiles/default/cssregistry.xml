@@ -23,8 +23,8 @@
   <!--
     <stylesheet id="++resource++ibwt.paullaplonesite/something.css"/>
     -->
-  <stylesheet applyPrefix="True" title="" id="++theme++paullab_theme/css/960_12_col.css" />
-  <stylesheet applyPrefix="True" title="" id="++theme++paullab_theme/css/project.css"
+  <stylesheet applyPrefix="True" title="" id="++theme++paullabtheme/css/960_12_col.css" />
+  <stylesheet applyPrefix="True" title="" id="++theme++paullabtheme/css/project.css"
       expression="request/HTTP_X_THEME_ENABLED | nothing" />
   <stylesheet applyPrefix="True" title="" id="columns.css"
       expression="not:request/HTTP_X_THEME_ENABLED | nothing" />
