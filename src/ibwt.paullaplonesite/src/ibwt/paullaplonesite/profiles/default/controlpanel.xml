@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<object name="portal_controlpanel"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    i18n:domain="ibwt.paullaplonesite"
+    purge="False">
+<!--
+    <configlet
+        title="ibwt.paullaplonesite Settings"
+        action_id="paullaplonesite"
+        appId="ibwt.paullaplonesite"
+        category="Products"
+        condition_expr=""
+        url_expr="string:${portal_url}/@@ibwt.paullaplonesite-settings"
+        icon_expr="string:${portal_url}/++resource++ibwt.paullaplonesite/ibwt.paullaplonesite_icon.png"
+        visible="True"
+        i18n:attributes="title">
+        <permission>Manage portal</permission>
+    </configlet>
+-->
+</object>

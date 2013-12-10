@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    i18n_domain="ibwt.paullaplonesite">
+  <!--
+     EXAMPLES:
+    <genericsetup:upgradeStep
+        profile="ibwt.paullaplonesite:default"
+        source="xxx"
+        destination="yyy"
+        title="ibwt.paullaplonesite import CSS"
+        description=""
+        handler=".import_css" />
+    <genericsetup:upgradeStep
+        profile="ibwt.paullaplonesite:default"
+        source="xxx"
+        destination="yyy"
+        title="ibwt.paullaplonesite import JS"
+        description=""
+        handler=".import_js"/>
+    <genericsetup:upgradeStep
+        profile="ibwt.paullaplonesite:default"
+        source="xxx"
+        destination="yyy"
+        title="ibwt.paullaplonesite Recook resources"
+        description=""
+        handler=".recook_resources" />
+    <genericsetup:upgradeStep
+        profile="ibwt.paullaplonesite:default"
+        source="1000"
+        destination="1001"
+        title="ibwt.paullaplonesite - 1001"
+        description=""
+        handler=".upgrade_1001"
+      />
+  -->
+
+  <!-- vim:set ft=xml: -->
+</configure>

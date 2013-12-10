@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="ibwt.paullaplonesite">
+  <!-- Include direct package dependencies -->
+  <genericsetup:registerProfile
+      name="qi"
+      title="ibwt Policy QI"
+      directory="profiles/qi"
+      description="Turn a Plone site into the ibwt QIINFO site."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+    />
+  <genericsetup:registerProfile
+      name="default"
+      title="ibwt.paullaplonesite"
+      directory="profiles/default"
+      description="Install the ibwt.paullaplonesite addon on this plone site."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+    />
+  <genericsetup:registerProfile
+      title="ibwt.paullaplonesite uninstall"
+      name="uninstall"
+      description="Uninstall the ibwt.paullaplonesite addon on tbis plone site."
+      directory="profiles/uninstall"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      />
+  <genericsetup:importStep
+      name="ibwt_paullaplonesite setupVarious"
+      title="various setup for ibwt.paullaplonesite "
+      description="description"
+      handler="ibwt.paullaplonesite.setuphandlers.setupVarious">
+    <depends name="plone-content"/>
+  </genericsetup:importStep>
+  <!-- migration steps -->
+  <genericsetup:importStep
+      name="ibwt_paullaplonesite setupQi"
+      title="Quick Installer products dependencies setup for ibwt.paullaplonesite"
+      description="description"
+      handler="ibwt.paullaplonesite.setuphandlers.setupQi">
+    <depends name="plone-content"/>
+  </genericsetup:importStep>
+  <!-- -->
+  <utility factory="ibwt_paullaplonesite.HiddenProducts" name="ibwt_paullaplonesite.hiddenproducts"/>
+  <utility factory="ibwt_paullaplonesite.HiddenProfiles" name="ibwt_paullaplonesite.hiddenprofiles"/>
+  <include package=".upgrades"/>
+</configure>
