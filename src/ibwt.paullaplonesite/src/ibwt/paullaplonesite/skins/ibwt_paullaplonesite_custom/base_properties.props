@@ -2,7 +2,7 @@ title:string=ibwt.paullaplonesite's color, font, logo and border defaults
 
 plone_paullaplonesite:string=ibwt.paullaplonesite
 
-logoName:string=logo.jpg
+logoName:string=logo.png
 
 fontFamily:string="Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif
 fontBaseSize:string=69%
