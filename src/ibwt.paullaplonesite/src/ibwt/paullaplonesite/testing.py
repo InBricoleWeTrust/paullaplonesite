@@ -73,8 +73,6 @@ class IbwtPaullaplonesiteLayer(PloneSandboxLayer):
         #with_ploneproduct_contentlicensing
         import collective.contentlicensing
         self.loadZCML('configure.zcml', package=collective.contentlicensing)
-        import collective.contentlicensing
-        self.loadZCML('configure.zcml', package=collective.contentlicensing)
         #with_ploneproduct_plominotinymce
         import plomino.tinymce
         self.loadZCML('configure.zcml', package=plomino.tinymce)
@@ -84,9 +82,6 @@ class IbwtPaullaplonesiteLayer(PloneSandboxLayer):
         #with_ploneproduct_galleria
         import collective.galleria
         self.loadZCML('configure.zcml', package=collective.galleria)
-        #with_ploneproduct_eeafn
-        import eea.facetednavigation
-        self.loadZCML('configure.zcml', package=eea.facetednavigation)
         #with_ploneproduct_cpembed
         import collective.portlet.embed
         self.loadZCML('configure.zcml', package=collective.portlet.embed)
@@ -112,23 +107,11 @@ class IbwtPaullaplonesiteLayer(PloneSandboxLayer):
         self.loadZCML('configure.zcml', package=plone.app.themingplugins)
         import Products.CMFPlomino
         self.loadZCML('configure.zcml', package=Products.CMFPlomino)
-        import collective.contentlicensing
-        self.loadZCML('configure.zcml', package=collective.contentlicensing)
-        import collective.addthis
-        self.loadZCML('configure.zcml', package=collective.addthis)
         import collective.quickupload
         self.loadZCML('configure.zcml', package=collective.quickupload)
         #with_ploneproduct_eeatags
         import eea.tags
         self.loadZCML('configure.zcml', package=eea.tags)
-        #with_ploneproduct_qupload
-        import collective.quickupload
-        self.loadZCML('configure.zcml', package=collective.quickupload)
-        import collective.quickupload
-        self.loadZCML('configure.zcml', package=collective.quickupload)
-        #with_ploneproduct_plomino
-        import Products.CMFPlomino
-        self.loadZCML('configure.zcml', package=Products.CMFPlomino)
 
         # -----------------------------------------------------------------------
         # Load our own paullaplonesite
@@ -143,9 +126,7 @@ class IbwtPaullaplonesiteLayer(PloneSandboxLayer):
 
         #with_ploneproduct_qupload
         z2.installProduct(app, 'collective.quickupload')
-        z2.installProduct(app, 'collective.quickupload')
         #with_ploneproduct_contentlicensing
-        z2.installProduct(app, 'collective.contentlicensing')
         z2.installProduct(app, 'collective.contentlicensing')
         #with_ploneproduct_patheming
         z2.installProduct(app, 'plone.app.theming')
