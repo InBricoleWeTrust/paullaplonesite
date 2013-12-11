@@ -40,11 +40,7 @@ from plone.app.testing.selenium_layers import (
     SELENIUM_FUNCTIONAL_TESTING as SELENIUM_TESTING
 )
 
-TESTED_PRODUCTS = (
-#with_ploneproduct_plomino
-    'CMFPlomino',
-    'CMFPlomino',
-)
+TESTED_PRODUCTS = ('CMFPlomino',)
 
 PLONE_MANAGER_NAME = 'Plone_manager'
 PLONE_MANAGER_ID = 'plonemanager'
@@ -109,6 +105,11 @@ class IbwtPaullaplonesiteLayer(PloneSandboxLayer):
         self.loadZCML('configure.zcml', package=eea.facetednavigation)
         import eea.tags
         self.loadZCML('configure.zcml', package=eea.tags)
+        #with_ploneproduct_patheming
+        import plone.app.theming
+        self.loadZCML('configure.zcml', package=plone.app.theming)
+        import plone.app.themingplugins
+        self.loadZCML('configure.zcml', package=plone.app.themingplugins)
         import Products.CMFPlomino
         self.loadZCML('configure.zcml', package=Products.CMFPlomino)
         import collective.contentlicensing
@@ -146,6 +147,9 @@ class IbwtPaullaplonesiteLayer(PloneSandboxLayer):
         #with_ploneproduct_contentlicensing
         z2.installProduct(app, 'collective.contentlicensing')
         z2.installProduct(app, 'collective.contentlicensing')
+        #with_ploneproduct_patheming
+        z2.installProduct(app, 'plone.app.theming')
+        z2.installProduct(app, 'plone.app.themingplugins')
         z2.installProduct(app, 'ibwt.paullaplonesite')
 
         # -------------------------------------------------------------------------

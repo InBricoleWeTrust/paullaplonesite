@@ -57,6 +57,8 @@
   <include package="collective.galleria" file="configure.zcml"/>
   <include package="collective.portlet.embed" file="configure.zcml"/>
   <include package="plomino.tinymce" file="configure.zcml"/>
+  <include package="plone.app.theming" file="configure.zcml"/>
+  <include package="plone.app.themingplugins" file="configure.zcml"/>
   <include package="eea.facetednavigation" file="configure.zcml"/>
   <include package="eea.facetednavigation" file="meta.zcml"/>
   <!--<includeOverrides package="eea.facetednavigation" file="overrides.zcml"-->

@@ -5,6 +5,7 @@
   <!-- QuickInstalled dependencies -->
       <dependency>profile-ibwt.paullaplonesite:qi</dependency>
   <!-- GenericSetup dependencies -->
+      <dependency>profile-plone.app.theming:default</dependency>
       <dependency>profile-plone.app.dexterity:default</dependency>
       <dependency>profile-eea.facetednavigation:default</dependency>
       <dependency>profile-collective.galleria:default</dependency>

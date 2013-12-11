@@ -29,9 +29,7 @@ classifiers = [
 name = "ibwt.paullaplonesite"
 setup(
     name=name,
-    namespace_packages=[
-         "ibwt"
-    ],
+    namespace_packages=["ibwt"],
     version=version,
     description="Paulla IBWT Plone Site",
     long_description=long_description,
@@ -50,7 +48,6 @@ setup(
         "Plone",
         "chardet",
         "plone.app.upgrade",
-        "plone.app.themingplugins",
         "collective.dexteritytextindexer",
         "plone.app.dexterity",
         "plone.app.referenceablebehavior",
@@ -58,6 +55,9 @@ setup(
         "plone.directives.form",
         # with_ploneproduct_contentlicensing
         "collective.contentlicensing",
+        # with_ploneproduct_patheming
+        'plone.app.theming',
+        'plone.app.themingplugins',
         # with_ploneproduct_plominotinymce
         "plomino.tinymce",
         # with_ploneproduct_addthis
