@@ -54,6 +54,10 @@ body.template-SFAjax_base_edit.ajax_edition {
 
 /************  header **********************/
 
+#logo {
+  width: auto;
+}
+
 #portal-header {
   background-color: #FFF;
  /* background: url('BeeLab.png') no-repeat 650px top;*/
@@ -119,7 +123,10 @@ body.template-SFAjax_base_edit.ajax_edition {
   padding: 5px;
   cursor: pointer;
 }
-
+#searchGadget {
+  padding: 8px;
+  border: 1px solid #CCC;
+}
 input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
   background: #FFE8E0;
 }
@@ -249,6 +256,7 @@ dl.portlet.portletLogin dd.portletItem.lastItem {
 /*************** connexion tools ****************************/
 #portal-personaltools {
   background: none;
+  padding: 1em 0;
 }
 #portal-personaltools dd {
   border-radius: 10 px;
@@ -266,15 +274,16 @@ dl.portlet.portletLogin dd.portletItem.lastItem {
   float: none;
   display: inline-block !important;
   background: #333;
-  margin: 10px;
+  margin: 0 0 0 10px;
   padding: 10px;
   border-radius: 5px;
 }
 dl.actionMenu.deactivated dt {
-  margoin: 0;
+  margin: 0;
 }
 #portal-personaltools.actionMenu a:link {
   margin: 0;
+  line-height: 1em;
 }
 
 /********** pagination *******************************/
@@ -851,5 +860,4 @@ text-align: center;
 
 
 /*  */
-
 
