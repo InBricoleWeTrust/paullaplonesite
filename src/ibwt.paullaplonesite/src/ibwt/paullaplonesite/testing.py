@@ -40,7 +40,7 @@ from plone.app.testing.selenium_layers import (
     SELENIUM_FUNCTIONAL_TESTING as SELENIUM_TESTING
 )
 
-TESTED_PRODUCTS = ('CMFPlomino',)
+TESTED_PRODUCTS = ('',)
 
 PLONE_MANAGER_NAME = 'Plone_manager'
 PLONE_MANAGER_ID = 'plonemanager'
@@ -73,12 +73,6 @@ class IbwtPaullaplonesiteLayer(PloneSandboxLayer):
         #with_ploneproduct_contentlicensing
         import collective.contentlicensing
         self.loadZCML('configure.zcml', package=collective.contentlicensing)
-        #with_ploneproduct_plominotinymce
-        import plomino.tinymce
-        self.loadZCML('configure.zcml', package=plomino.tinymce)
-        #with_ploneproduct_addthis
-        import collective.addthis
-        self.loadZCML('configure.zcml', package=collective.addthis)
         #with_ploneproduct_galleria
         import collective.galleria
         self.loadZCML('configure.zcml', package=collective.galleria)
@@ -92,26 +86,13 @@ class IbwtPaullaplonesiteLayer(PloneSandboxLayer):
         self.loadZCML('configure.zcml', package=collective.portlet.oembed)
         import collective.galleria
         self.loadZCML('configure.zcml', package=collective.galleria)
-        import collective.portlet.embed
-        self.loadZCML('configure.zcml', package=collective.portlet.embed)
-        import plomino.tinymce
-        self.loadZCML('configure.zcml', package=plomino.tinymce)
-        import eea.facetednavigation
-        self.loadZCML('configure.zcml', package=eea.facetednavigation)
-        import eea.tags
-        self.loadZCML('configure.zcml', package=eea.tags)
         #with_ploneproduct_patheming
         import plone.app.theming
         self.loadZCML('configure.zcml', package=plone.app.theming)
         import plone.app.themingplugins
         self.loadZCML('configure.zcml', package=plone.app.themingplugins)
-        import Products.CMFPlomino
-        self.loadZCML('configure.zcml', package=Products.CMFPlomino)
         import collective.quickupload
         self.loadZCML('configure.zcml', package=collective.quickupload)
-        #with_ploneproduct_eeatags
-        import eea.tags
-        self.loadZCML('configure.zcml', package=eea.tags)
 
         # -----------------------------------------------------------------------
         # Load our own paullaplonesite

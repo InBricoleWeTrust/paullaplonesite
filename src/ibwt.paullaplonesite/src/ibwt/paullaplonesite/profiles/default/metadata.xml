@@ -6,17 +6,17 @@
       <dependency>profile-ibwt.paullaplonesite:qi</dependency>
   <!-- GenericSetup dependencies -->
       <dependency>profile-plone.app.theming:default</dependency>
+	  <dependency>profile-plone.app.caching:default</dependency>
       <dependency>profile-plone.app.dexterity:default</dependency>
-      <dependency>profile-eea.facetednavigation:default</dependency>
       <dependency>profile-collective.galleria:default</dependency>
       <dependency>profile-collective.portlet.embed:default</dependency>
-      <dependency>profile-collective.oembed:default</dependency>
-      <dependency>profile-eea.tags:default</dependency>
       <dependency>profile-collective.quickupload:default</dependency>
-      <dependency>profile-collective.addthis:default</dependency>
       <dependency>profile-collective.portlet.oembed:default</dependency>
-      <dependency>profile-plomino.tinymce:default</dependency>
       <dependency>profile-collective.contentlicensing:default</dependency>
-      <dependency>profile-Products.CMFPlomino:default</dependency>
+      <dependency>profile-collective.galleria:default</dependency>
+      <dependency>profile-Solgema.fullcalendar:default</dependency>
+      <dependency>profile-collective.fontawesome:default</dependency>
+      <dependency>profile-collective.vaporisation:default</dependency>
+      <dependency>profile-collective.responsivetheme:default</dependency>
  </dependencies>
 </metadata>

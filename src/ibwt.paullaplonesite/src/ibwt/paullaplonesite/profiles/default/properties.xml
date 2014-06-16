@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <site>
 
-  <property name="title">ibwt</property>
-  <property name="description">Welcome to the ibwt website</property>
+  <property name="title">mips-lab</property>
+  <property name="description">Welcome to the mips-lab website</property>
   <property name="email_from_address"
-      type="string">testeur@makina-corpus.com</property>
+      type="string">contact@mips-lab.net</property>
   <property name="email_from_name"
       type="string">Portal Administrator</property>
   <property name="validate_email" type="boolean">True</property>

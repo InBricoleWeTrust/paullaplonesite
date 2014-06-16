@@ -1,0 +1,57 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="example.conference">
+
+<head>
+
+</head>
+
+<body>
+
+<metal:main fill-slot="main">
+    <tal:main-macro metal:define-macro="main"
+                               tal:define="widgets nocall:context/@@view">
+
+        <div tal:replace="structure provider:plone.abovecontenttitle" />
+
+        <h1 class="documentFirstHeading"><i class="fa fa-lightbulb-o"></i> <tal:block tal:content="context/title" /></h1>
+
+        <div tal:replace="structure provider:plone.belowcontenttitle" />
+
+        <p class="documentDescription" tal:content="context/description" />
+
+        <div tal:replace="structure provider:plone.abovecontentbody" />
+        
+
+
+
+        <div><h2><i class="fa fa-pencil-square-o"></i> Votre id&eacute;e en quelques lignes</h2> <span tal:content="structure context/votre_id_e_en_quelques_lignes___/output | string:" /></div>
+
+       <div tal:replace="structure widgets/++widget++esquisse_croquis_schema/render">
+            This will be replaced with the rendered content of the field.
+       </div>
+
+        <fieldset id="related-items" 
+                  tal:define="ritems context/relatedItems|nothing"
+                  tal:condition="ritems">
+           <legend i18n:translate=""><i class="fa fa-exchange"/> Related items</legend>
+              <ul tal:repeat="ref ritems">
+                 <li> <a tal:content="ref/to_object/Title"
+                         tal:attributes="href ref/to_object/absolute_url"/>
+                 </li>
+              </ul>
+        </fieldset>
+
+        <block metal:use-macro="context/folder_listing/macros/listing" />
+
+        <div tal:replace="structure provider:plone.belowcontentbody" />
+
+    </tal:main-macro>
+</metal:main>
+
+</body>
+</html>

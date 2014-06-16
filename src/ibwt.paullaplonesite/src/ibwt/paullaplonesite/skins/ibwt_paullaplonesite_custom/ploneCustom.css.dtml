@@ -1,4 +1,3 @@
-
 /*
  *  This is the file where you put your CSS changes. 
  *  You should preferrably use this and override the 
@@ -9,91 +8,848 @@
  *  documented at the bottom of this file.
  */
  
-/* <dtml-with base_properties> (do not remove this :) */
-/* <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either :) */
+/*  (do not remove tFhis :) */
+/*  (not this either :) */
+
+/* ******************************* */
 
 
-/* DELETE THIS LINE AND PUT YOUR CUSTOM STUFF HERE */
+@media screen and (min-width : 1625px)  {
+
+}
+
+/* *********  PAULLA CSS ******* */
+
+body {
+  min-height: 100%;
+  background-image: linear-gradient(top, #ffffff 0%, #cccccc 100%);
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #cccccc 100%);
+  background-image: -webkit-linear-gradient(top, #ffffff 0%, #cccccc 100%);
+  background-size: 100% auto;
+  background-attachment: fixed;
+}
+
+body.template-SFAjax_base_edit.ajax_edition {
+  background-image: none;
+  background: #FFF;
+}
+
+#visual-portal-wrapper {
+  max-width: 1200px;
+  min-height: 100%;
+  margin: auto;
+  font-size: 1em;
+}
+#portal-top,
+#portal-columns,
+#portal-footer-wrapper {
+  background: #FFF;
+}
+
+#content a:link,
+#content a:hover,
+#content a:visited {
+  color: #FF6633;
+}
+
+/************  header **********************/
+
+#portal-header {
+  background-color: #FFF;
+ /* background: url('BeeLab.png') no-repeat 650px top;*/
+}
+
+#portal-header #titles {
+  margin: 10px 0 0 480px;
+  width: 380px;
+  float: left;
+}
+#portal-header #titles dl dt {
+  display: block;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  line-height: 2em;
+  font-size: 0.85em;
+  color: #CCC;
+  background: #FFF;
+  cursor: default;
+  padding-left: 10px;
+  font-weight: normal;
+}
+#portal-header #titles dl dt:hover {
+  font-size: 1em;
+  color: #333;
+  background: #EEE;
+}
+
+#LSResult {
+  background: #FFF;
+  z-index: 10;
+  margin: 1em 0 0 0;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+}
+
+#LSResult fieldset {
+    border: 0 none;
+    margin: 0;
+    padding: 1em;
+}
+
+#livesearchLegend {
+  background: none;
+  color: #F63;
+}
+.LSRow a:link,
+.LSRow a:visited,
+.LSRow a:hover {
+  color: #75ad0a;
+}
+
+/***** search tool ******************/
+#portal-searchbox {
+  margin: 5em 1em 0 0;
+}
+.LSBox input.searchButton {
+  border: 0;
+  border-radius: 5px;
+  background: #333;
+  color: #F63;
+  padding: 5px;
+  cursor: pointer;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
+  background: #FFE8E0;
+}
+/************ AJAX box ********************************/
+.overlay-login .pb-ajax,
+.overlay-register .pb-ajax {
+  box-shadow: 0 0 1em rgba(0,0,0,0.3);
+  border-radius: 10px;
+  border: 0;
+}
+#pb_1 div.overlay div.close,
+#pb_3 div.overlay div.close {
+  top: 5px !important;
+  right: 5px !important;
+}
+#fieldset-openid-login input, #login-form input {
+  font-size: 1em;
+}
+
+.pb-ajax a:link,
+.pb-ajax a:visited {
+  color: #75AD0A;
+}
+.pb-ajax a:hover {
+  color: #F63;
+}
+#fieldset-openid-login input.context,
+#login-form input.context,
+.pb-ajax input.context {
+  background: #333;
+  color: #F63;
+  padding: 5px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 1.5em;
+}
+
+/*********** viewlets and portlets *******************/
+
+#portal-personaltools .actionMenuContent {
+  font-size: 1em;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+#viewlet-below-content-title {
+  margin: 1em;
+  font-size: 0.85em;
+}
+
+.portletWrapper {
+  background: #333;
+  color: #EEE;
+}
+#portal-column-two {
+  margin-top: 16px;
+}
+#content div.newsImageContainer p.discreet {
+  top: 0;
+  text-align: center;
+  font-size: 0.80em;
+  background: #333;
+  color: #EEE;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+dl.portlet dt.portletHeader {
+  background: #FFF;
+  border-bottom: 1px solid #FF6633;
+  font-weight: normal;fc-event-time, .fc-event-title
+  font-size: 1.25em;
+  padding: 0 0 5px 0;
+  color: #ff6633;
+}
+dl.portlet dd.portletItem {
+  padding: 1em;
+  border-bottom: 1px dotted #EEE;
+}
+dl.portlet dd.portletItem.lastItem {
+  border: 0;
+}
+
+dl.portlet a:link {
+  color: #EEE;ui-state-disabled
+  font-weight: normal;
+}
+
+#loginform div.formControls {
+  margin: 0;
+  text-align: center;
+}
+
+#loginform #__ac_name,
+#loginform #__ac_password {
+    border: 0;
+    border-radius: 5px;
+    padding: 5px;
+    width: 95%;
+    margin-top: 5px;
+}
+#loginform label[for="__ac_name"]:before {
+  font-family: FontAwesome;
+  padding-right: 5px;
+  content: '';
+}
+#loginform label[for="__ac_password"]:before {
+  font-family: FontAwesome;
+  padding-right: 5px;
+  content: '';
+}
+.portletLogin .portletItem img {
+  display: none;
+}
+dl.portlet.portletLogin dd.portletItem,
+#portlet-tagcloud-mot-clefs dd.portletItem {
+  border: 0;
+}
+dl.portlet.portletLogin dd.portletItem.even,
+dl.portlet.portletLogin dd.portletItem.lastItem {
+  padding: 0.5em 1em;
+}
+#portlet-tagcloud-mot-clefs .portletFooter {
+  padding: 0;
+  display: none;
+}
+/*************** connexion tools ****************************/
+#portal-personaltools {
+  background: none;
+}
+#portal-personaltools dd {
+  border-radius: 10 px;
+  background: #333;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+}
+#portal-personaltools #anon-personalbar a:link,
+#portal-personaltools #anon-personalbar a:visited,
+ #anon-personalbar a:hover,
+#portal-personaltools.actionMenu a:link,
+#portal-personaltools.actionMenu a:visited,
+#portal-personaltools.actionMenu a:hover {
+  color: #F63;
+  font-size: 1.5em;
+  float: none;
+  display: inline-block !important;
+  background: #333;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+dl.actionMenu.deactivated dt {
+  margoin: 0;
+}
+#portal-personaltools.actionMenu a:link {
+  margin: 0;
+}
+
+/********** pagination *******************************/
+
+#content #content-core div.listingBar a,
+#content #content-core div.listingBar a:visited,
+div.managePortletsLink a,
+div.managePortletsLink,
+a.managePortletsFallback,
+#category a.link-category,
+span.selectedTag {
+  background: #333;
+  color: #FF6633 !important;
+  border : 0;
+}
+#content #content-core div.listingBar a {
+  border-radius: 5px;
+}
+
+#content #content-core div.listingBar a:hover,
+div.managePortletsLink a:hover,
+div.managePortletsLink:hover,
+div.managePortletsLink:hover a,
+a.managePortletsFallback:hover,
+#category a.link-category:hover,
+span.selectedTag:hover {
+  background: #FF6633;
+  color: #333 !important;
+}
+#portaltab-Members {
+  display: none;
+}
+div.listingBar {
+  width: 70%;
+  margin: auto;
+  clear:both;
+  margin: auto;
+  padding: 20px 0;
+}
+div.listingBar .previous {
+  margin-right: 20px;
+}
+div.listingBar .next {
+
+}
+/***************** FC Agenda ************************/
+
+.fc-header-space {
+  display: none;
+}
+
+#sfc-ical-export {
+  /*display: none;*/
+}
+
+.fc-header .fc-button {
+  border: 0;
+  margin: 5px;
+  color: #FF6633;
+  background: #333;
+  border-radius: 5px;
+}
+.fc-button .ui-icon {
+  color: #FF6633;
+}
+
+.fc-header .fc-button:hover {
+  background: #FF6633;
+  color: #333;
+}
+.fc-button.ui-state-disabled,
+.fc-button.ui-state-disabled:hover,
+.fc-button.ui-state-active,
+.fc-button.ui-state-active:hover {
+  background: #CCC;
+  color: #666;
+  opacity: 1;
+}
+.fc-event {
+  background: #CCC;
+} 
+.fc-event-inner {
+  color: #333 !important;
+}
+.fc-event-inner .fc-event-time {
+  background: none;
+}
+.fc-event-time,
+.fc-event-title {
+  padding: 0 5px;
+}
+
+#content ul.formTabs {
+  border-radius: 0;
+  border-style: solid;
+}
+#SFQuery {
+  margin-top: 20px;
+}
+#content #SFQuery li.formTab a.selected {
+  background: #333;
+  color: #FF6633;
+  font-weight: normal;
+  border-radius: 5px;
+}
+
+#event_edit_container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#event_edit_container {
+  min-width: 800px;
+}
+#event-base-edit {
+  background: #FFF;
+  padding-bottom: 20px;
+}
+
+/*****************************************************/
+
+.qq-upload-button {
+  border-radius: 0;
+  background: #000;
+  border: 0;
+}
+.qq-upload-button:hover {
+ background: #808080;
+}
+
+#content a.link-overlay,
+#content a:link,
+dl.portlet a:link {
+  border:0 !important;
+}
+
+.project-entry {
+    background: none;
+    background-color: #CCC;
+    float: left;
+    height: 185px;
+    margin: 15px;
+    position: relative;
+    text-align: center;
+    width: 143px;
+}
+
+.project-title {
+    color: #333;
+    display: block;
+    height: 60;
+    width: auto;
+    padding: 5px;
+}
+
+.project-wrapper {
+     height: 130px;
+    margin-bottom: 7px;
+    width: 128px;
+}
+
+.project-entry .project-wrapper img {
+  position: absolute;
+  left : 7.5px;
+  bottom: 10px;
+}
 
 
+#content .documentDescription {
+  margin: 20px 0;
+  line-height: 1.5em;
+}
+
+#content,
+div.listingBar,
+#content .discreet,
+#sidebar .discreet,
+dl.portlet {
+  font-size: 1em;
+}
+#content .documentByLine {
+  font-size: 0.8em;
+  color: #808080;
+}
+
+#content ul.fa-ul {
+  list-style-type: none;
+  margin-left: 2.14286em;
+  padding-left: 0;
+}
+
+#content img.tileImage {
+  margin: 10px;
+  border: 10px solid #333;
+}
+
+#content div.newsImageContainer {
+  background-color: #333;
+  border: 10px solid #333;
+  color: #EEE;
+  min-height: 150px;
+}
+.newsImageContainer #parent-fieldname-image {
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
+#center-and-left-area,
+#center-area,
+.right-area-js  {
+  margin-right: 0;
+  margin-left: 0;
+}
+#right-area{
+  width: 30%;
+}
+#center-and-left-area {
+  width: 70%;
+}
+
+a:hover {
+  text-decoration: none;
+}
+dl.portalMessage, div.attention, div.caution, div.danger, div.error, div.hint, div.important, div.note, div.tip, div.warning {
+  background-color: #EEE;
+}
+#plone-contentmenu-workflow .state-published {
+  background-color: #AAA;
+  border: 0;
+}
+.tileItem {
+    margin-top: 20px;
+    border-top: 1px dotted #AAA !important;
+}
+
+.tileFooter span + span {
+  color: #333;
+  padding-left: 20px;
+}
+.tileFooter span + span:before {
+  padding-right: 5px;
+  font-family: FontAwesome;
+  content:'';
+}
+#portal-breadcrumbs {
+  margin: 0 0 20px 0;
+}
+#content #content-core a,
+#content #content-core a:link,
+#content #content-core a:hover,
+#content #content-core a:visited,
+#content #viewlet-below-content-body a,
+#content #viewlet-below-content-body a:link,
+#content #viewlet-below-content-body a:hover,
+#content #viewlet-below-content-body a:visited,
+#portal-breadcrumbs a,
+#portal-breadcrumbs a:link,
+#portal-breadcrumbs a:hover,
+#portal-breadcrumbs a:visited {
+  color: #75AD0A !important;
+  text-decoration: none;
+}
+
+#content #content-core a.postit,
+#content #content-core a.postit:link,
+#content #content-core a.postit:hover,
+#content #content-core a.postit:visited {
+  color: #333 !important;
+}
+
+#content #content-core .documentByLine a,
+#content #content-core .documentByLine a:link,
+#content #content-core .documentByLine a:hover,
+#content #content-core .documentByLine a:visited,
+img[alt] {
+  color: #FF6633 !important;
+}
+
+#content-core dt {
+  margin: 20px 0 10px 0;
+  font-family: 'Exo 2',sans-serif; 
+  padding-top: 20px;
+  border-top: dotted 1px #CCC;
+
+}
+#content-core dt .summary {
+  font-size: 1.25em; 
+}
+#content-core dd {
+  background: #EEE;
+  padding: 20px;
+  margin: 0;
+}
+#content .tileItem h2 a {
+ /* color: #8BCC30;*/
+  color: #75AD0A !important;
+}
+
+#contentActionMenus,
+#edit-bar,
+#content-views,
+#contentActionMenus dl.actionMenu a, #contentActionMenus dl.actionMenu.activated dd  {
+  background: #808080;
+  border-radius: 0;
+  border: 0;
+}
+
+#content-views li.selected a, #content-views li a:hover, #content li.formTab a.selected, #content li.formTab a:hover, #content-core li.formTab a.selected, #content-core li.formTab a:hover {
+  border-radius: 0;
+  background: #EEE;
+}
+#contentActionMenus {
+  padding: 0;
+  top: 0;
+  right: 0;
+  border: 0;
+}
+
+#contentActionMenus dl.actionMenu,
+#content-views a, #content li.formTab a, #content-core li.formTab a {
+  line-height: 24px;
+}
+
+#portal-top, #portal-columns, #portal-footer-wrapper {
+  background-color: #FFF;
+  border-left: 1px dotted #CCCCCC;
+  border-right: 1px dotted #CCCCCC;
+}
+#portal-footer-wrapper {
+  padding-top: 40px;
+  background-color: #333;
+  color: #EEE;
+}
+#portal-footer-wrapper a,
+#portal-footer-wrapper a:link,
+#portal-footer-wrapper a:hover,
+#portal-footer-wrapper a:visited {
+  color: #EEE;
+}
 
 
-/* </dtml-with> */
+H1,
+H2,
+H3,
+H4,
+H5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.tile-footer,
+#breadcrumbs-home a,
+#siteactions a,
+#portal-logo {
+  font-family: 'Exo 2', sans-serif;
+  letter-spacing: 0.005em;
+  font-weight: normal;
+}
 
-/* DOCUMENTATION ON PRE-DEFINED PROPERTIES FROM PLONE */
+H1, .h1 {
+  line-height: 1.25em;
+}
 
- /* You can insert colors and other variables from Plone's 
-    base_properties by doing:
-    
-    & dtml-variableName ; (without the spaces, excluded here to not make it render)
-    
-    Example:
-    
-    myLink {
-        color: & dtml-fontColor ;   (again, without the spaces)
-    }
+#breadcrumbs-home a {
+  text-transform: uppercase;
+}
+#portal-logo {
+  font-size: 1em;
+  color:#FF6633;
+  margin: 20px 0;
+}
+#portal-logo span {
+  margin-top: 0.5em;
+}
+
+#portal-globalnav li {
+ font-family: 'Exo 2', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
+  font-size: 1em;
+}
+#portal-globalnav li a {
+  color: #333;
+  padding: 9px 30px 15px 40px;
+  border: 0;
+  border-right: 1px solid #FF6633;
+  text-align: center;
+  background-color: #fff;
+  position: relative;
+  height: 1.5em;
+}
+
+#portal-globalnav li a:before {
+  position: absolute;
+  left: 5px;
+  top: 4px;
+  z-index: 10;
+  background: url('picto-glider.png') no-repeat;
+  width: 30px;
+  height: 30px;
+  opacity: 0.8;
+  content: '';
+}
+#portal-globalnav li a:hover {
+background-color: #FF6633;
+  color: #333333;
+  text-decoration: none;
+}
+#portal-globalnav li:nth-child(2) a:before {
+  background-position: -30px 0;
+}
+#portal-globalnav li:nth-child(3) a:before {
+  background-position: -60px 0;
+}
+#portal-globalnav li:nth-child(4) a:before {
+  background-position: -90px 0;
+}
+#portal-globalnav li:nth-child(5) a:before {
+  background-position: -120px 0;
+}
+#portal-globalnav li:nth-child(6) a , 
+#portal-globalnav li#portaltab-informations-pratiques a {
+  border: 0;
+}
+#portal-globalnav .selected a, #portal-globalnav .selected a:hover {
+  background-color: #FF6633;
+ color: #333333;
+}
+
+#portal-globalnav {
+  background: transparent;
+  width: 90%;
+  margin: 40px auto;
+}
+
+dl.portlet dt.portletHeader a.tile {
+  color:#FF6633;
+}
+
+#portal-colophon a, .searchSection label {
+  font-size: 0.85em;
+}
+
+div.listingBar a:hover {
+  background-color: #FF6633;
+  border-color: #FF6633;
+  color: black;
+}
+
+#category a.link-category:hover {
+background-color: #FF6633;
+  border-color: #FF6633;
+  color: black;
+}
+
+#content fieldset {
+  border: 0.1em solid #FF6633;
+  border-style: solid none none none;
+}
+
+#portal-searchsection {
+  display: none;
+}
+
+#content label {
+  padding-left: 5px;
+}
+
+.fc-button fc-button-calendar ui-state-default ui-corner-left ui-corner-right{
+  background-color: #FF6633;
+}
+
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  background: #FF6633;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+
+}
+
+
+div.postit-listing{
+  float:left;
+  text-decoration:none;
+  color:#000;
+  background:#FFEEBD; /* jaune */
+  height: 8.5em;
+  width: 8.5em;
+  padding: 0.5em;
+  margin: 0.5em;
+  Font-size: 1em;
+  line-height: 1.25em;
+  text-align: center;
  
-   This means you can generate your own elements that use Plone's defaults,
-   and respect any customizations people have done. See base_properties for
-   the default values.
- 
-   These are the available properties:
-   
-   logoName - the file name of the portal logo
-   
-   fontFamily - the font family used for all text that is not headers
-   
-   fontBaseSize - the base font size that everything is calculated from
-   
-   fontColor - the main font color
-   
-   fontSmallSize - used for various elements like buttons and discreet text
-   
-   discreetColor - the font color of discreet text
+  /* Firefox */
+  -moz-box-shadow:3px 3px 5px rgba(0,0,0,0.4);
+  /* Safari+Chrome */
+  -webkit-box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
+  /* Opera */
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
 
-   backgroundColor - the background color 
-   
-   linkColor - the color used on normal links
+/*rotate*/
+  -webkit-transform:rotate(-4deg);
+  -o-transform:rotate(-4deg);
+  -moz-transform:rotate(-4deg);
+}
 
-   linkActiveColor - color used on active links
+div.postit-listing .postit-description {
+  font-size: 0.85em;
+  line-height: 1em;
+  margin-top: 15px;
+}
 
-   linkVisitedColor - color used on visited links
-   
-   borderWidth - the width of most borders in Plone
-   
-   borderStyle - the style of the border lines, normally solid
-   
-   borderStyleAnnotations - style of border lines on comments etc
-   
-   globalBorderColor - the border color used on the main tabs, the portlets etc
-   
-   globalBackgroundColor - background color for the selected tabs, portlet headings etc
-   
-   globalFontColor - the color of the font in the tabs and in portlet headings
-   
-   headingFontFamily - font family for h1/h2/h3/h4/h5/h6 headlines
-   
-   contentViewBorderColor - the content view tabs border color
-   
-   contentViewBackgroundColor - the content view tabs background color
-   
-   contentViewFontColor - the font color used in the content view tabs
-   
-   inputFontColor - the font color used for input elements
-   
-   textTransform - whether to lowercase text in portlets, tabs etc.
-   
-   evenRowBackgroundColor - the background color of even rows in listings
-   
-   oddRowBackgroundColor - the background color of even rows in listings
-   
-   notifyBorderColor - border color of notification elements like the status message, the calendar focus
-   
-   notifyBackgroundColor - background color of notification elements like the status message, the calendar focus
-   
-   helpBackgroundColor - background color of information pop-ups (currently not used)
-          
- */
+div.postit-listing:nth-child(odd) {
+  -o-transform:rotate(4deg);
+  -webkit-transform:rotate(4deg);
+  -moz-transform:rotate(4deg);
+  position:relative;
+  top:5px;
+  background:#BDFFF5; /* vert */
+}
+
+div.postit-listing:nth-child(3n) {
+  -o-transform:rotate(-3deg);
+  -webkit-transform:rotate(-3deg);
+  -moz-transform:rotate(-3deg);
+  position:relative;
+  top:3px;
+  background:#BDDDFF; /* bleu */
+}
+
+div.postit-listing:nth-child(4n) {
+  -o-transform:rotate(3deg);
+  -webkit-transform:rotate(3deg);
+  -moz-transform:rotate(3deg);
+  position:relative;
+  top:5px;
+  background:#FFBDCD; /* rose-orange */
+}
 
 
-/* Stylesheet for the 'ibwt.paullaplonesite' Plone theme */
+
+div.postit-listing:hover, div.postit-listing:focus{
+  -moz-box-shadow:3px 3px 5px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
+  box-shadow:3px 3px 5px rgba(0,0,0,0.4);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position:relative;
+  z-index:5;
+}
+
+span.postit-description{
+float:left;
+text-align: center;
+}
+
+.postit-title {
+  font-weight: bold;
+  text-align: center;
+}
+
+
+#plone-document-byline{
+  display:none !important;
+}
+
+/* bon */
+/* ******************** END OF PAULLA CUSTOM CSS **************** */
+
+
+/*  */
+
+

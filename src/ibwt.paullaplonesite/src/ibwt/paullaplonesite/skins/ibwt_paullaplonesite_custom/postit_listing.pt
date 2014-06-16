@@ -1,0 +1,39 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+<body>
+
+<metal:content-core fill-slot="content-core">
+<metal:block use-macro="context/standard_view/macros/content-core">
+
+    <metal:entries fill-slot="entries">
+    <metal:block use-macro="context/standard_view/macros/entries">
+    <metal:entry fill-slot="entry">
+
+                    <div metal:define-macro="listitem"
+                        class="postit-listing">
+                            <a href="#"
+                               tal:attributes="href python:item_type in use_view_action and item_url+'/view' or item_url;
+                                               class string: postit $item_type_class $item_wf_state_class url">
+                              
+                              <span class="postit-title"
+                                    tal:content="item/Title"/>
+                              <span class="postit-description"
+                                     tal:content="item_description"/>
+                            </a>
+                    </div>
+
+    </metal:entry>
+    </metal:block>
+    </metal:entries>
+
+</metal:block>
+</metal:content-core>
+
+</body>
+</html>

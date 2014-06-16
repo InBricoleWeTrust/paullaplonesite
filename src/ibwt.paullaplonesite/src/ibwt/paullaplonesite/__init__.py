@@ -12,8 +12,8 @@ MessageFactory = ibwtpaullaplonesiteMessageFactory = MessageFactory('ibwt.paulla
 logger = logging.getLogger('ibwt.paullaplonesite')
 EXTENSION_PROFILES = ('ibwt.paullaplonesite:default',)
 SKIN = 'ibwt.skin'
-HIDDEN_PRODUCTS = [u'plone.app.openid', u'NuPlone']
-HIDDEN_PROFILES = [u'plone.app.openid', u'NuPlone']
+HIDDEN_PRODUCTS = [u'NuPlone']
+HIDDEN_PROFILES = [u'NuPlone']
 
 PRODUCT_DEPENDENCIES = (
 )
@@ -30,7 +30,7 @@ class HiddenProfiles(object):
     implements(INonInstallableProfiles)
 
     def getNonInstallableProfiles(self):
-        return [u'plone.app.openid', u'NuPlone']
+        return [u'NuPlone']
 
 
 def initialize(context):

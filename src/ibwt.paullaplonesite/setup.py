@@ -53,30 +53,27 @@ setup(
         "plone.app.referenceablebehavior",
         "plone.directives.dexterity",
         "plone.directives.form",
+		'plone.namedfile [blobs]',
+		'plone.app.relationfield',
         # with_ploneproduct_contentlicensing
         "collective.contentlicensing",
         # with_ploneproduct_patheming
         'plone.app.theming',
         'plone.app.themingplugins',
-        # with_ploneproduct_plominotinymce
-        "plomino.tinymce",
-        # with_ploneproduct_addthis
-        "collective.addthis",
         # with_ploneproduct_galleria
         "collective.galleria",
-        # with_ploneproduct_eeafn
-        "eea.facetednavigation",
         # with_ploneproduct_cpembed
         "collective.portlet.embed",
         # with_ploneproduct_oembed
         "collective.oembed",
         "collective.portlet.oembed",
-        # with_ploneproduct_eeatags
-        "eea.tags",
         # with_ploneproduct_qupload
         "collective.quickupload",
-        # with_ploneproduct_plomino
-        "Products.CMFPlomino",
+		'collective.vaporisation',
+		'collective.embedly',
+		'Solgema.fullcalendar',
+		'collective.fontawesome',
+		'collective.responsivetheme',
         # -*- Extra requirements: -*-
     ],
     extras_require={
