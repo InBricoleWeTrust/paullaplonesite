@@ -855,7 +855,67 @@ text-align: center;
   display:none !important;
 }
 
-/* brunus ready */
+/************************ media queries *************************/
+@media (max-width : 720px)  {
+
+  #logo,
+  div#logo,
+  #portal-searchbox,
+  #portal-personaltools-wrapper,
+  #portal-header #titles {
+    float: none !important;
+    display: block;
+    margin: 0 !important;
+    width: auto;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+  #logo {
+    text-align: center;
+  }
+  #logo img {
+    width: 299px !important;
+    height: 89px !important;
+  }
+  div#portal-searchbox {
+    margin: 0 !important;
+    text-align: right;
+  }
+  dl#portal-personaltools {
+    margin: 0 !important;
+  }
+  #portal-top,
+  div#portal-columns,
+  #portal-footer-wrapper {
+    width: 95%;
+    padding: 0.5em;
+    margin: auto;
+  }
+  .nav-menu .nav-primary {
+    margin-top: 0 !important;
+  }
+  #portal-header #titles dl dt {
+    transition: none;
+    font-size: 1em;
+    color: #333;
+    cursor: default;
+  }
+  #portal-header #titles dl dt:hover {
+    font-size: 1em;
+    color: #333;
+    background: #FFF;
+  }
+}
+
+@media (max-width : 850px)  {
+
+  #portal-header #titles dl dt {
+    display: inline-block;
+  }
+}
+
+/* bon */
 /* ******************** END OF PAULLA CUSTOM CSS **************** */
 
 
