@@ -115,20 +115,28 @@ body.template-SFAjax_base_edit.ajax_edition {
 #portal-searchbox {
   margin: 5em 1em 0 0;
 }
-.LSBox input.searchButton {
+.LSBox input.searchButton,
+.searchPage.searchButton.allowMultiSubmit {
   border: 0;
   border-radius: 5px;
   background: #333;
   color: #F63;
   padding: 5px;
   cursor: pointer;
+  font-size: 1.5em;
 }
 #searchGadget {
   padding: 8px;
   border: 1px solid #CCC;
+  margin-right: 10px;
 }
 input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
   background: #FFE8E0;
+}
+input.searchPage {
+  font-size: 1.5em !important;
+  padding: 2px 5px;
+  margin-right: 10px;
 }
 /************ AJAX box ********************************/
 .overlay-login .pb-ajax,
@@ -137,13 +145,20 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
   border-radius: 10px;
   border: 0;
 }
-#pb_1 div.overlay div.close,
-#pb_3 div.overlay div.close {
-  top: 5px !important;
-  right: 5px !important;
+.overlay.overlay-ajax.overlay-login,
+.overlay.overlay-ajax.overlay-register {
+    max-width: 600px;
 }
-#fieldset-openid-login input, #login-form input {
+
+#fieldset-openid-login input,
+#login-form input,
+#fieldset-openid-login input:focus,
+#login-form input:focus {
   font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  font-size: 1em;
+  padding: 5px;
 }
 
 .pb-ajax a:link,
@@ -163,14 +178,15 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
   border: 0;
   font-size: 1.5em;
 }
+div.overlaybg div.close,
+div.overlay div.close {
+  position: relative;
+  float: right;
+  top: 5px;
+  left: -35px;
+}
 
 /*********** viewlets and portlets *******************/
-
-#portal-personaltools .actionMenuContent {
-  font-size: 1em;
-  margin-top: 10px;
-  border-radius: 10px;
-}
 
 #viewlet-below-content-title {
   margin: 1em;
@@ -254,6 +270,16 @@ dl.portlet.portletLogin dd.portletItem.lastItem {
   display: none;
 }
 /*************** connexion tools ****************************/
+#portal-personaltools-wrapper {
+  z-index: 100;
+}
+
+#portal-personaltools .actionMenuContent {
+  font-size: 1em;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
 #portal-personaltools {
   background: none;
   padding: 1em 0;
@@ -670,26 +696,31 @@ H1, .h1 {
 }
 
 #portal-globalnav li {
- font-family: 'Exo 2', sans-serif;
+  font-family: 'Exo 2', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.10em;
-  font-size: 1em;
+  line-height: 40px;
+  display: inline-block;
 }
 #portal-globalnav li a {
   color: #333;
-  padding: 9px 30px 15px 40px;
+  padding: 0 40px;
   border: 0;
   border-right: 1px solid #FF6633;
   text-align: center;
   background-color: #fff;
   position: relative;
-  height: 1.5em;
+  height: 100%;
+  line-height: 40px;
+  display: block;
+  vertical-align: middle;
+  min-width: 0;
 }
 
 #portal-globalnav li a:before {
   position: absolute;
   left: 5px;
-  top: 4px;
+  top: 5px;
   z-index: 10;
   background: url('picto-glider.png') no-repeat;
   width: 30px;
@@ -714,8 +745,7 @@ background-color: #FF6633;
 #portal-globalnav li:nth-child(5) a:before {
   background-position: -120px 0;
 }
-#portal-globalnav li:nth-child(6) a , 
-#portal-globalnav li#portaltab-informations-pratiques a {
+#portal-globalnav li:last-child a {
   border: 0;
 }
 #portal-globalnav .selected a, #portal-globalnav .selected a:hover {
@@ -928,4 +958,5 @@ text-align: center;
 
 
 /*  */
+
 
