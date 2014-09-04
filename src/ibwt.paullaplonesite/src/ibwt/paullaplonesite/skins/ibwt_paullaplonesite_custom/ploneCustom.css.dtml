@@ -56,6 +56,17 @@ body.template-SFAjax_base_edit.ajax_edition {
 
 #logo {
   width: auto;
+  margin-left: -97%;
+}
+#portal-logo {
+  font-size: 1em;
+  color:#FF6633;
+  margin: 20px 0;
+  width: 400px;
+  height: auto;
+}
+#portal-logo span {
+  margin-top: 0.5em;
 }
 
 #portal-header {
@@ -226,8 +237,9 @@ dl.portlet dd.portletItem.lastItem {
   border: 0;
 }
 
-dl.portlet a:link {
-  color: #EEE;ui-state-disabled
+dl.portlet a:link,
+dl.portlet a:visited {
+  color: #EEE;
   font-weight: normal;
 }
 
@@ -270,6 +282,7 @@ dl.portlet.portletLogin dd.portletItem.lastItem {
   display: none;
 }
 /*************** connexion tools ****************************/
+
 #portal-personaltools-wrapper {
   z-index: 100;
 }
@@ -339,9 +352,7 @@ span.selectedTag:hover {
   background: #FF6633;
   color: #333 !important;
 }
-#portaltab-Members {
-  display: none;
-}
+
 div.listingBar {
   width: 70%;
   margin: auto;
@@ -686,14 +697,6 @@ H1, .h1 {
 #breadcrumbs-home a {
   text-transform: uppercase;
 }
-#portal-logo {
-  font-size: 1em;
-  color:#FF6633;
-  margin: 20px 0;
-}
-#portal-logo span {
-  margin-top: 0.5em;
-}
 
 #portal-globalnav li {
   font-family: 'Exo 2', sans-serif;
@@ -702,9 +705,12 @@ H1, .h1 {
   line-height: 40px;
   display: inline-block;
 }
+#portal-globalnav li#portaltab-Members {
+  display: none;
+}
 #portal-globalnav li a {
   color: #333;
-  padding: 0 40px;
+  padding: 0 20px;
   border: 0;
   border-right: 1px solid #FF6633;
   text-align: center;
@@ -717,6 +723,7 @@ H1, .h1 {
   min-width: 0;
 }
 
+/*
 #portal-globalnav li a:before {
   position: absolute;
   left: 5px;
@@ -727,12 +734,15 @@ H1, .h1 {
   height: 30px;
   opacity: 0.8;
   content: '';
-}
+} */
+
 #portal-globalnav li a:hover {
 background-color: #FF6633;
   color: #333333;
   text-decoration: none;
 }
+
+/*
 #portal-globalnav li:nth-child(2) a:before {
   background-position: -30px 0;
 }
@@ -744,8 +754,9 @@ background-color: #FF6633;
 }
 #portal-globalnav li:nth-child(5) a:before {
   background-position: -120px 0;
-}
-#portal-globalnav li:last-child a {
+} */
+
+#portal-globalnav li:nth-child(7) a {
   border: 0;
 }
 #portal-globalnav .selected a, #portal-globalnav .selected a:hover {
@@ -755,8 +766,9 @@ background-color: #FF6633;
 
 #portal-globalnav {
   background: transparent;
-  width: 90%;
+  width: 100%;
   margin: 40px auto;
+  font-size: 75%;
 }
 
 dl.portlet dt.portletHeader a.tile {
@@ -953,10 +965,18 @@ text-align: center;
   }
 }
 
+
+
+#kiwi .right_bar {
+    background-color: #DADADA;
+    border-left: 1px solid #8A8A8A;
+    display:block;
+    width:10px;
+}
+
 /* bon */
 /* ******************** END OF PAULLA CUSTOM CSS **************** */
 
 
 /*  */
-
 
